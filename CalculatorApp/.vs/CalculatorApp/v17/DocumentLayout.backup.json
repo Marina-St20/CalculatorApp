@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 267,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,16 +38,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.cs",
               "RelativeDocumentMoniker": "CalculatorApp\\Form1.cs",
-              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.cs",
-              "RelativeToolTip": "CalculatorApp\\Form1.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAIA8wBoAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.cs [Design]",
+              "RelativeToolTip": "CalculatorApp\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T00:01:02.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T23:58:51.485Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -64,15 +63,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.cs",
               "RelativeDocumentMoniker": "CalculatorApp\\Form1.cs",
-              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.cs [Design]",
-              "RelativeToolTip": "CalculatorApp\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.cs",
+              "RelativeToolTip": "CalculatorApp\\Form1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIA8wBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T23:58:51.485Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-21T00:01:02.229Z",
+              "EditorCaption": ""
             }
           ]
         },
