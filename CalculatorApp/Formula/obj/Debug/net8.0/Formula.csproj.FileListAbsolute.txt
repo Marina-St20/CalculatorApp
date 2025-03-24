@@ -1,0 +1,12 @@
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\bin\Debug\net8.0\Formula.deps.json
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\bin\Debug\net8.0\Formula.dll
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\bin\Debug\net8.0\Formula.pdb
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\obj\Debug\net8.0\Formula.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\obj\Debug\net8.0\Formula.AssemblyInfoInputs.cache
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\obj\Debug\net8.0\Formula.AssemblyInfo.cs
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\obj\Debug\net8.0\Formula.csproj.CoreCompileInputs.cache
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\obj\Debug\net8.0\Formula.sourcelink.json
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\obj\Debug\net8.0\Formula.dll
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\obj\Debug\net8.0\refint\Formula.dll
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\obj\Debug\net8.0\Formula.pdb
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\Formula\obj\Debug\net8.0\ref\Formula.dll

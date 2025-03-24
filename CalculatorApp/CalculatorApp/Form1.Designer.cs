@@ -64,7 +64,6 @@
             backspaceButton.Text = "BKSP";
             backspaceButton.UseMnemonic = false;
             backspaceButton.UseVisualStyleBackColor = true;
-            backspaceButton.Click += button1_Click;
             // 
             // label1
             // 
@@ -85,6 +84,7 @@
             textDisplay.TabIndex = 2;
             textDisplay.TabStop = false;
             textDisplay.TextAlign = HorizontalAlignment.Right;
+            textDisplay.TextChanged += textDisplay_TextChanged;
             // 
             // openPButton
             // 
@@ -109,6 +109,7 @@
             closePButton.Text = ")";
             closePButton.UseMnemonic = false;
             closePButton.UseVisualStyleBackColor = true;
+            closePButton.Click += closePButton_Click;
             // 
             // divideButton
             // 

@@ -15,3 +15,7 @@ C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\
 C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\net8.0-windows\CalculatorApp.genruntimeconfig.cache
 C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\net8.0-windows\ref\CalculatorApp.dll
 C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\net8.0-windows\CalculatorApp.calculatorForm.resources
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\CalculatorApp\bin\Debug\net8.0-windows\Formula.dll
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\CalculatorApp\bin\Debug\net8.0-windows\Formula.pdb
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\net8.0-windows\CalculatorApp.csproj.AssemblyReference.cache
+C:\Users\canca\source\repos\CalculatorApp\CalculatorApp\CalculatorApp\obj\Debug\net8.0-windows\Calculat.C0507999.Up2Date
