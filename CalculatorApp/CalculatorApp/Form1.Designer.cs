@@ -1,6 +1,6 @@
 ﻿namespace CalculatorApp
 {
-    partial class Form1
+    partial class calculatorForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,43 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            backspaceButton = new Button();
             label1 = new Label();
             textDisplay = new TextBox();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
-            button13 = new Button();
-            button14 = new Button();
-            button15 = new Button();
-            button16 = new Button();
-            button17 = new Button();
-            button18 = new Button();
-            button19 = new Button();
-            button20 = new Button();
+            openPButton = new Button();
+            closePButton = new Button();
+            divideButton = new Button();
+            sevenButton = new Button();
+            eightButton = new Button();
+            nineButton = new Button();
+            multiplyButton = new Button();
+            fourButton = new Button();
+            fiveButton = new Button();
+            sixButton = new Button();
+            subtractButton = new Button();
+            oneButton = new Button();
+            twoButton = new Button();
+            threeButton = new Button();
+            addButton = new Button();
+            zeroButton = new Button();
+            decimalButton = new Button();
+            eButton = new Button();
+            equalsButton = new Button();
             SuspendLayout();
             // 
-            // button1
+            // backspaceButton
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button1.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button1.Location = new Point(12, 164);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 82);
-            button1.TabIndex = 0;
-            button1.Text = "BKSP";
-            button1.UseMnemonic = false;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            backspaceButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            backspaceButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            backspaceButton.Location = new Point(12, 164);
+            backspaceButton.Name = "backspaceButton";
+            backspaceButton.Size = new Size(94, 82);
+            backspaceButton.TabIndex = 0;
+            backspaceButton.Text = "BKSP";
+            backspaceButton.UseMnemonic = false;
+            backspaceButton.UseVisualStyleBackColor = true;
+            backspaceButton.Click += button1_Click;
             // 
             // label1
             // 
@@ -86,263 +86,263 @@
             textDisplay.TabStop = false;
             textDisplay.TextAlign = HorizontalAlignment.Right;
             // 
-            // button2
+            // openPButton
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button2.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button2.Location = new Point(133, 164);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 82);
-            button2.TabIndex = 3;
-            button2.Text = "(";
-            button2.UseMnemonic = false;
-            button2.UseVisualStyleBackColor = true;
+            openPButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            openPButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            openPButton.Location = new Point(133, 164);
+            openPButton.Name = "openPButton";
+            openPButton.Size = new Size(94, 82);
+            openPButton.TabIndex = 3;
+            openPButton.Text = "(";
+            openPButton.UseMnemonic = false;
+            openPButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // closePButton
             // 
-            button3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button3.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button3.Location = new Point(255, 164);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 82);
-            button3.TabIndex = 4;
-            button3.Text = ")";
-            button3.UseMnemonic = false;
-            button3.UseVisualStyleBackColor = true;
+            closePButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            closePButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            closePButton.Location = new Point(255, 164);
+            closePButton.Name = "closePButton";
+            closePButton.Size = new Size(94, 82);
+            closePButton.TabIndex = 4;
+            closePButton.Text = ")";
+            closePButton.UseMnemonic = false;
+            closePButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // divideButton
             // 
-            button4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button4.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button4.Location = new Point(377, 164);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 82);
-            button4.TabIndex = 5;
-            button4.Text = "/";
-            button4.UseMnemonic = false;
-            button4.UseVisualStyleBackColor = true;
+            divideButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            divideButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            divideButton.Location = new Point(377, 164);
+            divideButton.Name = "divideButton";
+            divideButton.Size = new Size(94, 82);
+            divideButton.TabIndex = 5;
+            divideButton.Text = "/";
+            divideButton.UseMnemonic = false;
+            divideButton.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // sevenButton
             // 
-            button5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button5.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button5.Location = new Point(12, 272);
-            button5.Name = "button5";
-            button5.Size = new Size(94, 82);
-            button5.TabIndex = 6;
-            button5.Text = "7";
-            button5.UseMnemonic = false;
-            button5.UseVisualStyleBackColor = true;
+            sevenButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            sevenButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            sevenButton.Location = new Point(12, 272);
+            sevenButton.Name = "sevenButton";
+            sevenButton.Size = new Size(94, 82);
+            sevenButton.TabIndex = 6;
+            sevenButton.Text = "7";
+            sevenButton.UseMnemonic = false;
+            sevenButton.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // eightButton
             // 
-            button6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button6.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button6.Location = new Point(133, 272);
-            button6.Name = "button6";
-            button6.Size = new Size(94, 82);
-            button6.TabIndex = 7;
-            button6.Text = "8";
-            button6.UseMnemonic = false;
-            button6.UseVisualStyleBackColor = true;
+            eightButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            eightButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            eightButton.Location = new Point(133, 272);
+            eightButton.Name = "eightButton";
+            eightButton.Size = new Size(94, 82);
+            eightButton.TabIndex = 7;
+            eightButton.Text = "8";
+            eightButton.UseMnemonic = false;
+            eightButton.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // nineButton
             // 
-            button7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button7.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button7.Location = new Point(255, 272);
-            button7.Name = "button7";
-            button7.Size = new Size(94, 82);
-            button7.TabIndex = 8;
-            button7.Text = "9";
-            button7.UseMnemonic = false;
-            button7.UseVisualStyleBackColor = true;
+            nineButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            nineButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            nineButton.Location = new Point(255, 272);
+            nineButton.Name = "nineButton";
+            nineButton.Size = new Size(94, 82);
+            nineButton.TabIndex = 8;
+            nineButton.Text = "9";
+            nineButton.UseMnemonic = false;
+            nineButton.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // multiplyButton
             // 
-            button8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button8.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button8.Location = new Point(377, 272);
-            button8.Name = "button8";
-            button8.Size = new Size(94, 82);
-            button8.TabIndex = 9;
-            button8.Text = "x";
-            button8.UseMnemonic = false;
-            button8.UseVisualStyleBackColor = true;
+            multiplyButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            multiplyButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            multiplyButton.Location = new Point(377, 272);
+            multiplyButton.Name = "multiplyButton";
+            multiplyButton.Size = new Size(94, 82);
+            multiplyButton.TabIndex = 9;
+            multiplyButton.Text = "x";
+            multiplyButton.UseMnemonic = false;
+            multiplyButton.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // fourButton
             // 
-            button9.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button9.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button9.Location = new Point(12, 381);
-            button9.Name = "button9";
-            button9.Size = new Size(94, 82);
-            button9.TabIndex = 10;
-            button9.Text = "4";
-            button9.UseMnemonic = false;
-            button9.UseVisualStyleBackColor = true;
+            fourButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            fourButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            fourButton.Location = new Point(12, 381);
+            fourButton.Name = "fourButton";
+            fourButton.Size = new Size(94, 82);
+            fourButton.TabIndex = 10;
+            fourButton.Text = "4";
+            fourButton.UseMnemonic = false;
+            fourButton.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // fiveButton
             // 
-            button10.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button10.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button10.Location = new Point(133, 381);
-            button10.Name = "button10";
-            button10.Size = new Size(94, 82);
-            button10.TabIndex = 11;
-            button10.Text = "5";
-            button10.UseMnemonic = false;
-            button10.UseVisualStyleBackColor = true;
+            fiveButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            fiveButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            fiveButton.Location = new Point(133, 381);
+            fiveButton.Name = "fiveButton";
+            fiveButton.Size = new Size(94, 82);
+            fiveButton.TabIndex = 11;
+            fiveButton.Text = "5";
+            fiveButton.UseMnemonic = false;
+            fiveButton.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // sixButton
             // 
-            button11.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button11.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button11.Location = new Point(255, 381);
-            button11.Name = "button11";
-            button11.Size = new Size(94, 82);
-            button11.TabIndex = 12;
-            button11.Text = "6";
-            button11.UseMnemonic = false;
-            button11.UseVisualStyleBackColor = true;
+            sixButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            sixButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            sixButton.Location = new Point(255, 381);
+            sixButton.Name = "sixButton";
+            sixButton.Size = new Size(94, 82);
+            sixButton.TabIndex = 12;
+            sixButton.Text = "6";
+            sixButton.UseMnemonic = false;
+            sixButton.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // subtractButton
             // 
-            button12.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button12.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button12.Location = new Point(377, 381);
-            button12.Name = "button12";
-            button12.Size = new Size(94, 82);
-            button12.TabIndex = 13;
-            button12.Text = "-";
-            button12.UseMnemonic = false;
-            button12.UseVisualStyleBackColor = true;
+            subtractButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            subtractButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            subtractButton.Location = new Point(377, 381);
+            subtractButton.Name = "subtractButton";
+            subtractButton.Size = new Size(94, 82);
+            subtractButton.TabIndex = 13;
+            subtractButton.Text = "-";
+            subtractButton.UseMnemonic = false;
+            subtractButton.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // oneButton
             // 
-            button13.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button13.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button13.Location = new Point(12, 490);
-            button13.Name = "button13";
-            button13.Size = new Size(94, 82);
-            button13.TabIndex = 14;
-            button13.Text = "1";
-            button13.UseMnemonic = false;
-            button13.UseVisualStyleBackColor = true;
+            oneButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            oneButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            oneButton.Location = new Point(12, 490);
+            oneButton.Name = "oneButton";
+            oneButton.Size = new Size(94, 82);
+            oneButton.TabIndex = 14;
+            oneButton.Text = "1";
+            oneButton.UseMnemonic = false;
+            oneButton.UseVisualStyleBackColor = true;
             // 
-            // button14
+            // twoButton
             // 
-            button14.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button14.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button14.Location = new Point(133, 490);
-            button14.Name = "button14";
-            button14.Size = new Size(94, 82);
-            button14.TabIndex = 15;
-            button14.Text = "2";
-            button14.UseMnemonic = false;
-            button14.UseVisualStyleBackColor = true;
+            twoButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            twoButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            twoButton.Location = new Point(133, 490);
+            twoButton.Name = "twoButton";
+            twoButton.Size = new Size(94, 82);
+            twoButton.TabIndex = 15;
+            twoButton.Text = "2";
+            twoButton.UseMnemonic = false;
+            twoButton.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // threeButton
             // 
-            button15.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button15.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button15.Location = new Point(255, 490);
-            button15.Name = "button15";
-            button15.Size = new Size(94, 82);
-            button15.TabIndex = 16;
-            button15.Text = "3";
-            button15.UseMnemonic = false;
-            button15.UseVisualStyleBackColor = true;
+            threeButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            threeButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            threeButton.Location = new Point(255, 490);
+            threeButton.Name = "threeButton";
+            threeButton.Size = new Size(94, 82);
+            threeButton.TabIndex = 16;
+            threeButton.Text = "3";
+            threeButton.UseMnemonic = false;
+            threeButton.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // addButton
             // 
-            button16.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button16.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button16.Location = new Point(377, 490);
-            button16.Name = "button16";
-            button16.Size = new Size(94, 82);
-            button16.TabIndex = 17;
-            button16.Text = "+";
-            button16.UseMnemonic = false;
-            button16.UseVisualStyleBackColor = true;
+            addButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            addButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            addButton.Location = new Point(377, 490);
+            addButton.Name = "addButton";
+            addButton.Size = new Size(94, 82);
+            addButton.TabIndex = 17;
+            addButton.Text = "+";
+            addButton.UseMnemonic = false;
+            addButton.UseVisualStyleBackColor = true;
             // 
-            // button17
+            // zeroButton
             // 
-            button17.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button17.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button17.Location = new Point(12, 598);
-            button17.Name = "button17";
-            button17.Size = new Size(94, 82);
-            button17.TabIndex = 18;
-            button17.Text = "0";
-            button17.UseMnemonic = false;
-            button17.UseVisualStyleBackColor = true;
+            zeroButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            zeroButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            zeroButton.Location = new Point(12, 598);
+            zeroButton.Name = "zeroButton";
+            zeroButton.Size = new Size(94, 82);
+            zeroButton.TabIndex = 18;
+            zeroButton.Text = "0";
+            zeroButton.UseMnemonic = false;
+            zeroButton.UseVisualStyleBackColor = true;
             // 
-            // button18
+            // decimalButton
             // 
-            button18.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button18.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button18.Location = new Point(133, 598);
-            button18.Name = "button18";
-            button18.Size = new Size(94, 82);
-            button18.TabIndex = 19;
-            button18.Text = ".";
-            button18.UseMnemonic = false;
-            button18.UseVisualStyleBackColor = true;
+            decimalButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            decimalButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            decimalButton.Location = new Point(133, 598);
+            decimalButton.Name = "decimalButton";
+            decimalButton.Size = new Size(94, 82);
+            decimalButton.TabIndex = 19;
+            decimalButton.Text = ".";
+            decimalButton.UseMnemonic = false;
+            decimalButton.UseVisualStyleBackColor = true;
             // 
-            // button19
+            // eButton
             // 
-            button19.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button19.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button19.Location = new Point(255, 598);
-            button19.Name = "button19";
-            button19.Size = new Size(94, 82);
-            button19.TabIndex = 20;
-            button19.Text = "e";
-            button19.UseMnemonic = false;
-            button19.UseVisualStyleBackColor = true;
+            eButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            eButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            eButton.Location = new Point(255, 598);
+            eButton.Name = "eButton";
+            eButton.Size = new Size(94, 82);
+            eButton.TabIndex = 20;
+            eButton.Text = "e";
+            eButton.UseMnemonic = false;
+            eButton.UseVisualStyleBackColor = true;
             // 
-            // button20
+            // equalsButton
             // 
-            button20.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button20.Font = new Font("Arial", 12F, FontStyle.Bold);
-            button20.Location = new Point(377, 598);
-            button20.Name = "button20";
-            button20.Size = new Size(94, 82);
-            button20.TabIndex = 21;
-            button20.Text = "=";
-            button20.UseMnemonic = false;
-            button20.UseVisualStyleBackColor = true;
+            equalsButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            equalsButton.Font = new Font("Arial", 12F, FontStyle.Bold);
+            equalsButton.Location = new Point(377, 598);
+            equalsButton.Name = "equalsButton";
+            equalsButton.Size = new Size(94, 82);
+            equalsButton.TabIndex = 21;
+            equalsButton.Text = "=";
+            equalsButton.UseMnemonic = false;
+            equalsButton.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // calculatorForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
             ClientSize = new Size(483, 690);
-            Controls.Add(button20);
-            Controls.Add(button19);
-            Controls.Add(button18);
-            Controls.Add(button17);
-            Controls.Add(button16);
-            Controls.Add(button15);
-            Controls.Add(button14);
-            Controls.Add(button13);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(equalsButton);
+            Controls.Add(eButton);
+            Controls.Add(decimalButton);
+            Controls.Add(zeroButton);
+            Controls.Add(addButton);
+            Controls.Add(threeButton);
+            Controls.Add(twoButton);
+            Controls.Add(oneButton);
+            Controls.Add(subtractButton);
+            Controls.Add(sixButton);
+            Controls.Add(fiveButton);
+            Controls.Add(fourButton);
+            Controls.Add(multiplyButton);
+            Controls.Add(nineButton);
+            Controls.Add(eightButton);
+            Controls.Add(sevenButton);
+            Controls.Add(divideButton);
+            Controls.Add(closePButton);
+            Controls.Add(openPButton);
             Controls.Add(textDisplay);
             Controls.Add(label1);
-            Controls.Add(button1);
-            Name = "Form1";
+            Controls.Add(backspaceButton);
+            Name = "calculatorForm";
             Text = "CalculatorApp";
             Load += Form1_Load;
             ResumeLayout(false);
@@ -351,28 +351,28 @@
 
         #endregion
 
-        private Button button1;
+        private Button backspaceButton;
         private Label label1;
         private TextBox textDisplay;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button13;
-        private Button button14;
-        private Button button15;
-        private Button button16;
-        private Button button17;
-        private Button button18;
-        private Button button19;
-        private Button button20;
+        private Button openPButton;
+        private Button closePButton;
+        private Button divideButton;
+        private Button sevenButton;
+        private Button eightButton;
+        private Button nineButton;
+        private Button multiplyButton;
+        private Button fourButton;
+        private Button fiveButton;
+        private Button sixButton;
+        private Button subtractButton;
+        private Button oneButton;
+        private Button twoButton;
+        private Button threeButton;
+        private Button addButton;
+        private Button zeroButton;
+        private Button decimalButton;
+        private Button eButton;
+        private Button equalsButton;
     }
 }
