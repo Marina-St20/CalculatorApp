@@ -1,3 +1,5 @@
+using System.Drawing.Imaging;
+
 namespace CalculatorApp
 {
     public partial class calculatorForm : Form
@@ -36,7 +38,7 @@ namespace CalculatorApp
             textDisplay.Text = textDisplay.Text + decimalButton.Text;
         }
 
-        private void eButton_Click(object sender, EventArgs e)
+        private void percentButton_Click(object sender, EventArgs e)
         {
             textDisplay.Text = textDisplay.Text + eButton.Text;
         }

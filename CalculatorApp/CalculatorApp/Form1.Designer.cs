@@ -302,10 +302,10 @@
             eButton.Name = "eButton";
             eButton.Size = new Size(94, 82);
             eButton.TabIndex = 20;
-            eButton.Text = "e";
+            eButton.Text = "%";
             eButton.UseMnemonic = false;
             eButton.UseVisualStyleBackColor = true;
-            eButton.Click += eButton_Click;
+            eButton.Click += percentButton_Click;
             // 
             // equalsButton
             // 
