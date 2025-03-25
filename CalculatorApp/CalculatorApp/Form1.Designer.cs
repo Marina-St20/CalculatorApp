@@ -30,7 +30,6 @@
         {
             backspaceButton = new Button();
             label1 = new Label();
-            textDisplay = new TextBox();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             openPButton = new Button();
             closePButton = new Button();
@@ -51,6 +50,7 @@
             decimalButton = new Button();
             eButton = new Button();
             equalsButton = new Button();
+            textDisplay = new Label();
             SuspendLayout();
             // 
             // backspaceButton
@@ -64,27 +64,14 @@
             backspaceButton.Text = "BKSP";
             backspaceButton.UseMnemonic = false;
             backspaceButton.UseVisualStyleBackColor = true;
+            backspaceButton.Click += backspaceButton_Click;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(184, 93);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Size = new Size(0, 25);
             label1.TabIndex = 1;
-            // 
-            // textDisplay
-            // 
-            textDisplay.Font = new Font("Arial Narrow", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textDisplay.ForeColor = SystemColors.WindowFrame;
-            textDisplay.Location = new Point(12, 12);
-            textDisplay.Multiline = true;
-            textDisplay.Name = "textDisplay";
-            textDisplay.Size = new Size(459, 133);
-            textDisplay.TabIndex = 2;
-            textDisplay.TabStop = false;
-            textDisplay.TextAlign = HorizontalAlignment.Right;
-            textDisplay.TextChanged += textDisplay_TextChanged;
             // 
             // openPButton
             // 
@@ -97,6 +84,7 @@
             openPButton.Text = "(";
             openPButton.UseMnemonic = false;
             openPButton.UseVisualStyleBackColor = true;
+            openPButton.Click += openPButton_Click;
             // 
             // closePButton
             // 
@@ -122,6 +110,7 @@
             divideButton.Text = "/";
             divideButton.UseMnemonic = false;
             divideButton.UseVisualStyleBackColor = true;
+            divideButton.Click += divideButton_Click;
             // 
             // sevenButton
             // 
@@ -134,6 +123,7 @@
             sevenButton.Text = "7";
             sevenButton.UseMnemonic = false;
             sevenButton.UseVisualStyleBackColor = true;
+            sevenButton.Click += sevenButton_Click;
             // 
             // eightButton
             // 
@@ -146,6 +136,7 @@
             eightButton.Text = "8";
             eightButton.UseMnemonic = false;
             eightButton.UseVisualStyleBackColor = true;
+            eightButton.Click += eightButton_Click;
             // 
             // nineButton
             // 
@@ -158,6 +149,7 @@
             nineButton.Text = "9";
             nineButton.UseMnemonic = false;
             nineButton.UseVisualStyleBackColor = true;
+            nineButton.Click += nineButton_Click;
             // 
             // multiplyButton
             // 
@@ -170,6 +162,7 @@
             multiplyButton.Text = "x";
             multiplyButton.UseMnemonic = false;
             multiplyButton.UseVisualStyleBackColor = true;
+            multiplyButton.Click += multiplyButton_Click;
             // 
             // fourButton
             // 
@@ -182,6 +175,7 @@
             fourButton.Text = "4";
             fourButton.UseMnemonic = false;
             fourButton.UseVisualStyleBackColor = true;
+            fourButton.Click += fourButton_Click;
             // 
             // fiveButton
             // 
@@ -194,6 +188,7 @@
             fiveButton.Text = "5";
             fiveButton.UseMnemonic = false;
             fiveButton.UseVisualStyleBackColor = true;
+            fiveButton.Click += fiveButton_Click;
             // 
             // sixButton
             // 
@@ -206,6 +201,7 @@
             sixButton.Text = "6";
             sixButton.UseMnemonic = false;
             sixButton.UseVisualStyleBackColor = true;
+            sixButton.Click += sixButton_Click;
             // 
             // subtractButton
             // 
@@ -218,6 +214,7 @@
             subtractButton.Text = "-";
             subtractButton.UseMnemonic = false;
             subtractButton.UseVisualStyleBackColor = true;
+            subtractButton.Click += subtractButton_Click;
             // 
             // oneButton
             // 
@@ -230,6 +227,7 @@
             oneButton.Text = "1";
             oneButton.UseMnemonic = false;
             oneButton.UseVisualStyleBackColor = true;
+            oneButton.Click += oneButton_Click;
             // 
             // twoButton
             // 
@@ -242,6 +240,7 @@
             twoButton.Text = "2";
             twoButton.UseMnemonic = false;
             twoButton.UseVisualStyleBackColor = true;
+            twoButton.Click += twoButton_Click;
             // 
             // threeButton
             // 
@@ -254,6 +253,7 @@
             threeButton.Text = "3";
             threeButton.UseMnemonic = false;
             threeButton.UseVisualStyleBackColor = true;
+            threeButton.Click += threeButton_Click;
             // 
             // addButton
             // 
@@ -266,6 +266,7 @@
             addButton.Text = "+";
             addButton.UseMnemonic = false;
             addButton.UseVisualStyleBackColor = true;
+            addButton.Click += addButton_Click;
             // 
             // zeroButton
             // 
@@ -278,6 +279,7 @@
             zeroButton.Text = "0";
             zeroButton.UseMnemonic = false;
             zeroButton.UseVisualStyleBackColor = true;
+            zeroButton.Click += zeroButton_Click;
             // 
             // decimalButton
             // 
@@ -290,6 +292,7 @@
             decimalButton.Text = ".";
             decimalButton.UseMnemonic = false;
             decimalButton.UseVisualStyleBackColor = true;
+            decimalButton.Click += decimalButton_Click;
             // 
             // eButton
             // 
@@ -302,6 +305,7 @@
             eButton.Text = "e";
             eButton.UseMnemonic = false;
             eButton.UseVisualStyleBackColor = true;
+            eButton.Click += eButton_Click;
             // 
             // equalsButton
             // 
@@ -314,6 +318,19 @@
             equalsButton.Text = "=";
             equalsButton.UseMnemonic = false;
             equalsButton.UseVisualStyleBackColor = true;
+            equalsButton.Click += equalsButton_Click;
+            // 
+            // textDisplay
+            // 
+            textDisplay.BackColor = Color.WhiteSmoke;
+            textDisplay.Font = new Font("Arial", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textDisplay.ForeColor = SystemColors.WindowFrame;
+            textDisplay.Location = new Point(12, 12);
+            textDisplay.Name = "textDisplay";
+            textDisplay.Size = new Size(459, 133);
+            textDisplay.TabIndex = 22;
+            textDisplay.TextAlign = ContentAlignment.BottomRight;
+            textDisplay.TextChanged += textDisplay_TextChanged;
             // 
             // calculatorForm
             // 
@@ -321,6 +338,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
             ClientSize = new Size(483, 690);
+            Controls.Add(textDisplay);
             Controls.Add(equalsButton);
             Controls.Add(eButton);
             Controls.Add(decimalButton);
@@ -340,21 +358,18 @@
             Controls.Add(divideButton);
             Controls.Add(closePButton);
             Controls.Add(openPButton);
-            Controls.Add(textDisplay);
             Controls.Add(label1);
             Controls.Add(backspaceButton);
             Name = "calculatorForm";
             Text = "CalculatorApp";
             Load += Form1_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Button backspaceButton;
         private Label label1;
-        private TextBox textDisplay;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Button openPButton;
         private Button closePButton;
@@ -375,5 +390,6 @@
         private Button decimalButton;
         private Button eButton;
         private Button equalsButton;
+        private Label textDisplay;
     }
 }

@@ -53,6 +53,8 @@ namespace Formula
 
         //Errors/Exceptions: invalid Formulas, invalid methods
 
+        //private class BadSyntax
+
         //no need for variables
     }
 }
