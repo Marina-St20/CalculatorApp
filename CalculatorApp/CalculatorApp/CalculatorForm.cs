@@ -10,7 +10,12 @@ namespace CalculatorApp
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void calculatorForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textDisplay_Click(object sender, EventArgs e)
         {
 
         }
@@ -21,11 +26,6 @@ namespace CalculatorApp
             {
                 textDisplay.Text = textDisplay.Text.Remove(textDisplay.Text.Length - 1);
             }
-        }
-
-        private void textDisplay_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void zeroButton_Click(object sender, EventArgs e)
@@ -123,5 +123,7 @@ namespace CalculatorApp
             String text = textDisplay.Text;
             MessageBox.Show("You entered: " + text);
         }
+
+        
     }
 }

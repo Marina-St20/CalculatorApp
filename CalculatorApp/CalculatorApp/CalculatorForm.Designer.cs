@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             backspaceButton = new Button();
-            label1 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             openPButton = new Button();
             closePButton = new Button();
@@ -66,13 +65,6 @@
             backspaceButton.UseVisualStyleBackColor = true;
             backspaceButton.Click += backspaceButton_Click;
             // 
-            // label1
-            // 
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 25);
-            label1.TabIndex = 1;
-            // 
             // openPButton
             // 
             openPButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -80,7 +72,7 @@
             openPButton.Location = new Point(133, 164);
             openPButton.Name = "openPButton";
             openPButton.Size = new Size(94, 82);
-            openPButton.TabIndex = 3;
+            openPButton.TabIndex = 1;
             openPButton.Text = "(";
             openPButton.UseMnemonic = false;
             openPButton.UseVisualStyleBackColor = true;
@@ -93,7 +85,7 @@
             closePButton.Location = new Point(255, 164);
             closePButton.Name = "closePButton";
             closePButton.Size = new Size(94, 82);
-            closePButton.TabIndex = 4;
+            closePButton.TabIndex = 2;
             closePButton.Text = ")";
             closePButton.UseMnemonic = false;
             closePButton.UseVisualStyleBackColor = true;
@@ -106,7 +98,7 @@
             divideButton.Location = new Point(377, 164);
             divideButton.Name = "divideButton";
             divideButton.Size = new Size(94, 82);
-            divideButton.TabIndex = 5;
+            divideButton.TabIndex = 3;
             divideButton.Text = "/";
             divideButton.UseMnemonic = false;
             divideButton.UseVisualStyleBackColor = true;
@@ -119,7 +111,7 @@
             sevenButton.Location = new Point(12, 272);
             sevenButton.Name = "sevenButton";
             sevenButton.Size = new Size(94, 82);
-            sevenButton.TabIndex = 6;
+            sevenButton.TabIndex = 4;
             sevenButton.Text = "7";
             sevenButton.UseMnemonic = false;
             sevenButton.UseVisualStyleBackColor = true;
@@ -132,7 +124,7 @@
             eightButton.Location = new Point(133, 272);
             eightButton.Name = "eightButton";
             eightButton.Size = new Size(94, 82);
-            eightButton.TabIndex = 7;
+            eightButton.TabIndex = 5;
             eightButton.Text = "8";
             eightButton.UseMnemonic = false;
             eightButton.UseVisualStyleBackColor = true;
@@ -145,7 +137,7 @@
             nineButton.Location = new Point(255, 272);
             nineButton.Name = "nineButton";
             nineButton.Size = new Size(94, 82);
-            nineButton.TabIndex = 8;
+            nineButton.TabIndex = 6;
             nineButton.Text = "9";
             nineButton.UseMnemonic = false;
             nineButton.UseVisualStyleBackColor = true;
@@ -158,7 +150,7 @@
             multiplyButton.Location = new Point(377, 272);
             multiplyButton.Name = "multiplyButton";
             multiplyButton.Size = new Size(94, 82);
-            multiplyButton.TabIndex = 9;
+            multiplyButton.TabIndex = 7;
             multiplyButton.Text = "x";
             multiplyButton.UseMnemonic = false;
             multiplyButton.UseVisualStyleBackColor = true;
@@ -171,7 +163,7 @@
             fourButton.Location = new Point(12, 381);
             fourButton.Name = "fourButton";
             fourButton.Size = new Size(94, 82);
-            fourButton.TabIndex = 10;
+            fourButton.TabIndex = 8;
             fourButton.Text = "4";
             fourButton.UseMnemonic = false;
             fourButton.UseVisualStyleBackColor = true;
@@ -184,7 +176,7 @@
             fiveButton.Location = new Point(133, 381);
             fiveButton.Name = "fiveButton";
             fiveButton.Size = new Size(94, 82);
-            fiveButton.TabIndex = 11;
+            fiveButton.TabIndex = 9;
             fiveButton.Text = "5";
             fiveButton.UseMnemonic = false;
             fiveButton.UseVisualStyleBackColor = true;
@@ -197,7 +189,7 @@
             sixButton.Location = new Point(255, 381);
             sixButton.Name = "sixButton";
             sixButton.Size = new Size(94, 82);
-            sixButton.TabIndex = 12;
+            sixButton.TabIndex = 10;
             sixButton.Text = "6";
             sixButton.UseMnemonic = false;
             sixButton.UseVisualStyleBackColor = true;
@@ -210,7 +202,7 @@
             subtractButton.Location = new Point(377, 381);
             subtractButton.Name = "subtractButton";
             subtractButton.Size = new Size(94, 82);
-            subtractButton.TabIndex = 13;
+            subtractButton.TabIndex = 11;
             subtractButton.Text = "-";
             subtractButton.UseMnemonic = false;
             subtractButton.UseVisualStyleBackColor = true;
@@ -223,7 +215,7 @@
             oneButton.Location = new Point(12, 490);
             oneButton.Name = "oneButton";
             oneButton.Size = new Size(94, 82);
-            oneButton.TabIndex = 14;
+            oneButton.TabIndex = 12;
             oneButton.Text = "1";
             oneButton.UseMnemonic = false;
             oneButton.UseVisualStyleBackColor = true;
@@ -236,7 +228,7 @@
             twoButton.Location = new Point(133, 490);
             twoButton.Name = "twoButton";
             twoButton.Size = new Size(94, 82);
-            twoButton.TabIndex = 15;
+            twoButton.TabIndex = 13;
             twoButton.Text = "2";
             twoButton.UseMnemonic = false;
             twoButton.UseVisualStyleBackColor = true;
@@ -249,7 +241,7 @@
             threeButton.Location = new Point(255, 490);
             threeButton.Name = "threeButton";
             threeButton.Size = new Size(94, 82);
-            threeButton.TabIndex = 16;
+            threeButton.TabIndex = 14;
             threeButton.Text = "3";
             threeButton.UseMnemonic = false;
             threeButton.UseVisualStyleBackColor = true;
@@ -262,7 +254,7 @@
             addButton.Location = new Point(377, 490);
             addButton.Name = "addButton";
             addButton.Size = new Size(94, 82);
-            addButton.TabIndex = 17;
+            addButton.TabIndex = 15;
             addButton.Text = "+";
             addButton.UseMnemonic = false;
             addButton.UseVisualStyleBackColor = true;
@@ -275,7 +267,7 @@
             zeroButton.Location = new Point(12, 598);
             zeroButton.Name = "zeroButton";
             zeroButton.Size = new Size(94, 82);
-            zeroButton.TabIndex = 18;
+            zeroButton.TabIndex = 16;
             zeroButton.Text = "0";
             zeroButton.UseMnemonic = false;
             zeroButton.UseVisualStyleBackColor = true;
@@ -288,7 +280,7 @@
             decimalButton.Location = new Point(133, 598);
             decimalButton.Name = "decimalButton";
             decimalButton.Size = new Size(94, 82);
-            decimalButton.TabIndex = 19;
+            decimalButton.TabIndex = 17;
             decimalButton.Text = ".";
             decimalButton.UseMnemonic = false;
             decimalButton.UseVisualStyleBackColor = true;
@@ -301,7 +293,7 @@
             eButton.Location = new Point(255, 598);
             eButton.Name = "eButton";
             eButton.Size = new Size(94, 82);
-            eButton.TabIndex = 20;
+            eButton.TabIndex = 18;
             eButton.Text = "%";
             eButton.UseMnemonic = false;
             eButton.UseVisualStyleBackColor = true;
@@ -314,7 +306,7 @@
             equalsButton.Location = new Point(377, 598);
             equalsButton.Name = "equalsButton";
             equalsButton.Size = new Size(94, 82);
-            equalsButton.TabIndex = 21;
+            equalsButton.TabIndex = 19;
             equalsButton.Text = "=";
             equalsButton.UseMnemonic = false;
             equalsButton.UseVisualStyleBackColor = true;
@@ -328,9 +320,9 @@
             textDisplay.Location = new Point(12, 12);
             textDisplay.Name = "textDisplay";
             textDisplay.Size = new Size(459, 133);
-            textDisplay.TabIndex = 22;
+            textDisplay.TabIndex = 20;
             textDisplay.TextAlign = ContentAlignment.BottomRight;
-            textDisplay.TextChanged += textDisplay_TextChanged;
+            textDisplay.Click += textDisplay_Click;
             // 
             // calculatorForm
             // 
@@ -358,18 +350,16 @@
             Controls.Add(divideButton);
             Controls.Add(closePButton);
             Controls.Add(openPButton);
-            Controls.Add(label1);
             Controls.Add(backspaceButton);
             Name = "calculatorForm";
             Text = "CalculatorApp";
-            Load += Form1_Load;
+            Load += calculatorForm_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button backspaceButton;
-        private Label label1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Button openPButton;
         private Button closePButton;
