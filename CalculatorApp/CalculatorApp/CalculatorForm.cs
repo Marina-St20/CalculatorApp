@@ -122,6 +122,9 @@ namespace CalculatorApp
         {
             String text = textDisplay.Text;
             MessageBox.Show("You entered: " + text);
+            //create formula based on text
+            //evaluate it
+            //maybe save to stack?
         }
 
         

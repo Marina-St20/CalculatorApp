@@ -6,15 +6,17 @@ namespace Formula
     {
         string formulaString = "";
 
-        ArrayList tokenList = new ArrayList();
+        List<string> tokenList = new List<string>();
 
         public Formula(string formula)
         {
             formulaString = formula;
 
-            if (!isValidFormula())
+            createTokenList();
+
+            if (!isValidFormula(out string errorMessage))
             {
-                //throw something
+                throw new InvalidFormulaException(errorMessage);
             }
 
 
@@ -32,12 +34,12 @@ namespace Formula
 
         //Check if valid Formula Method
 
-        private bool isValidFormula(out object result)
+        private bool isValidFormula(out string errorMessage)
         {
             createTokenList();
 
 
-            result = "";
+            errorMessage = "";
 
             
 
@@ -52,6 +54,10 @@ namespace Formula
         //public string Evaluate() {}
 
         //Errors/Exceptions: invalid Formulas, invalid methods
+        public class InvalidFormulaException : Exception
+        {
+            public InvalidFormulaException(string message) : base(message) { }
+        }
 
         //private class BadSyntax
 
