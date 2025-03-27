@@ -22,7 +22,7 @@ namespace CalculatorApp
 
         private void backspaceButton_Click(object sender, EventArgs e)
         {
-            if (textDisplay.Text.Length > 0)
+            if (!isTextboxEmpty())
             {
                 textDisplay.Text = textDisplay.Text.Remove(textDisplay.Text.Length - 1);
             }
@@ -30,17 +30,21 @@ namespace CalculatorApp
 
         private void zeroButton_Click(object sender, EventArgs e)
         {
+            //cant be after ), 
             textDisplay.Text = textDisplay.Text + zeroButton.Text;
         }
 
         private void decimalButton_Click(object sender, EventArgs e)
         {
-            textDisplay.Text = textDisplay.Text + decimalButton.Text;
+            
+            if (!isLastTokenOperator())
+                textDisplay.Text = textDisplay.Text + decimalButton.Text;
         }
 
         private void percentButton_Click(object sender, EventArgs e)
         {
-            textDisplay.Text = textDisplay.Text + eButton.Text;
+            if (!isLastTokenOperator())
+                textDisplay.Text = textDisplay.Text + eButton.Text;
         }
 
         private void oneButton_Click(object sender, EventArgs e)
@@ -95,38 +99,91 @@ namespace CalculatorApp
 
         private void closePButton_Click(object sender, EventArgs e)
         {
-            textDisplay.Text = textDisplay.Text + closePButton.Text;
+            if (!isLastTokenOperator())
+                textDisplay.Text = textDisplay.Text + closePButton.Text;
         }
 
         private void divideButton_Click(object sender, EventArgs e)
         {
-            textDisplay.Text = textDisplay.Text + divideButton.Text;
+            if (!isLastTokenOperator())
+                textDisplay.Text = textDisplay.Text + divideButton.Text;
         }
 
         private void multiplyButton_Click(object sender, EventArgs e)
         {
-            textDisplay.Text = textDisplay.Text + multiplyButton.Text;
+            if (!isLastTokenOperator())
+                textDisplay.Text = textDisplay.Text + multiplyButton.Text;
         }
 
         private void subtractButton_Click(object sender, EventArgs e)
         {
-            textDisplay.Text = textDisplay.Text + subtractButton.Text;
+            if (!isLastTokenOperator())
+                textDisplay.Text = textDisplay.Text + subtractButton.Text;
         }
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            textDisplay.Text = textDisplay.Text + addButton.Text;
+            if (!isLastTokenOperator())
+                textDisplay.Text = textDisplay.Text + addButton.Text;
         }
 
         private void equalsButton_Click(object sender, EventArgs e)
         {
-            String text = textDisplay.Text;
-            MessageBox.Show("You entered: " + text);
-            //create formula based on text
-            //evaluate it
-            //maybe save to stack?
+            if (!isTextboxEmpty())
+            {
+                String text = textDisplay.Text;
+                MessageBox.Show("You entered: " + text);
+                //check to make sure: balanced parentheses (have member variable counting ( and )) 
+                //^if invalid based on checks, do nothing. 
+                //syntax should already be assured correct!
+                //create formula based on text
+                //evaluate it
+                //clear textdisplay and display evaluate
+                //bool for "current text display is a value rn" --once any number is clicked if curr text is value, then textdisplay is cleared
+                //maybe save to stack?
+            }
         }
 
-        
+        private bool isLastToken(string token)
+        {
+            if (!isTextboxEmpty())
+                return token == textDisplay.Text[^1].ToString();
+            return false;
+        }
+
+        private bool isLastTokenOperator()
+        {
+            List<string> operatorTokens = new List<string> {"+", "-", "x", "/"};
+            if (!isTextboxEmpty())
+            {
+                if (operatorTokens.Contains(textDisplay.Text[^1].ToString()))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool isLastTokenNumber()
+        {
+            List<string> operatorTokens = new List<string> { "+", "-", "x", "/", ".", "%" };
+            if (textDisplay.Text != string.Empty)
+            {
+                if (operatorTokens.Contains(textDisplay.Text[^1].ToString()))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool isTextboxEmpty()
+        {
+            if (textDisplay.Text == string.Empty)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

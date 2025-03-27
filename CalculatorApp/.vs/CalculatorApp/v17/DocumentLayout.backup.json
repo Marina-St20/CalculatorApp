@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|c:\\users\\canca\\source\\repos\\calculatorapp\\calculatorapp\\calculatorapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|solutionrelative:calculatorapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|c:\\users\\canca\\source\\repos\\calculatorapp\\calculatorapp\\calculatorapp\\calculatorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|solutionrelative:calculatorapp\\calculatorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|c:\\users\\canca\\source\\repos\\calculatorapp\\calculatorapp\\calculatorapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|solutionrelative:calculatorapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\calculatorapp\\calculatorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|solutionrelative:calculatorapp\\calculatorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|c:\\users\\canca\\source\\repos\\calculatorapp\\calculatorapp\\calculatorapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|solutionrelative:calculatorapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA45C336-DE08-4058-8069-70E989D5ABE8}|Formula\\Formula.csproj|c:\\users\\canca\\source\\repos\\calculatorapp\\calculatorapp\\formula\\formula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA45C336-DE08-4058-8069-70E989D5ABE8}|Formula\\Formula.csproj|solutionrelative:formula\\formula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|c:\\users\\canca\\source\\repos\\calculatorapp\\calculatorapp\\calculatorapp\\calculatorform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|solutionrelative:calculatorapp\\calculatorform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 267,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,41 +42,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.cs",
-              "RelativeDocumentMoniker": "CalculatorApp\\Form1.cs",
-              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.cs [Design]",
-              "RelativeToolTip": "CalculatorApp\\Form1.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Formula.cs",
+              "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\Formula\\Formula.cs",
+              "RelativeDocumentMoniker": "Formula\\Formula.cs",
+              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\Formula\\Formula.cs",
+              "RelativeToolTip": "Formula\\Formula.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAYwDsAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T23:58:51.485Z",
+              "WhenOpened": "2025-03-26T00:03:51.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalculatorForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.cs",
+              "RelativeDocumentMoniker": "CalculatorApp\\CalculatorForm.cs",
+              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.cs [Design]",
+              "RelativeToolTip": "CalculatorApp\\CalculatorForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:33:32.871Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.cs",
-              "RelativeDocumentMoniker": "CalculatorApp\\Form1.cs",
-              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.cs",
-              "RelativeToolTip": "CalculatorApp\\Form1.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAvwBsAAAAAAAAAAAAAAA==",
+              "Title": "CalculatorForm.cs",
+              "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.cs",
+              "RelativeDocumentMoniker": "CalculatorApp\\CalculatorForm.cs",
+              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.cs",
+              "RelativeToolTip": "CalculatorApp\\CalculatorForm.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAkwIgAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T00:01:02.229Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "CalculatorApp\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\Form1.Designer.cs",
-              "RelativeToolTip": "CalculatorApp\\Form1.Designer.cs",
-              "ViewState": "AgIAAFYBAAAAAAAAAAAAwGIBAAAkAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "CalculatorForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.Designer.cs",
+              "RelativeDocumentMoniker": "CalculatorApp\\CalculatorForm.Designer.cs",
+              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.Designer.cs",
+              "RelativeToolTip": "CalculatorApp\\CalculatorForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T01:13:45.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T01:13:45.969Z"
             }
           ]
         },
