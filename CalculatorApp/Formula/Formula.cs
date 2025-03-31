@@ -41,23 +41,8 @@ namespace Formula
         private bool isValidFormula(out string errorMessage)
         {
             errorMessage = string.Empty;
-            //closing parentheses rule <<in calcform.cs
-                //at no point should the number of closing parentheses seen so far be greater than the number of opening parentheses seen so far
 
-            //balanced paraenthese rule <<in calcform.cs
-                //the total number of opening parentheses must equal the total number of closing parentheses
 
-            //first token rule <<in calcform.cs
-                //first token must be a number, variable, or (
-
-            //last token rule <<in calcform.cs
-                //last token must be a number, variable, or ) <<if not, equals will do nothing
-
-            //parenthesis/operator following rule
-                //any token after a ( or operator must be a number, variable, or (
-
-            //extra following rule
-                //any token after a number, variable, or ) must be an operator or )
 
             return true;
         }
