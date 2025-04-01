@@ -6,6 +6,8 @@ namespace CalculatorApp
     {
         private int openP;
         private int closeP;
+        private int operatorForDecimalCount;
+        private int decimalCount;
 
         public calculatorForm()
         {
@@ -32,6 +34,14 @@ namespace CalculatorApp
             {
                 closeP--;
             }
+            if (isLastToken("."))
+            {
+                decimalCount--;
+            }
+            if (isLastTokenOperator())
+            {
+                operatorForDecimalCount--;
+            }
             if (textDisplay.Text.Length == 1)
             {
                 openP = 0;
@@ -52,15 +62,22 @@ namespace CalculatorApp
 
         private void decimalButton_Click(object sender, EventArgs e)
         {
-            
-            if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("("))
+            //0.0.0 <<decimals... how to ensure on app side they cant do this?
+            if (decimalCount < operatorForDecimalCount + 1 && !isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken(")") && !isLastToken("."))
+            {
                 textDisplay.Text = textDisplay.Text + decimalButton.Text;
+                decimalCount++;
+            }
         }
 
         private void percentButton_Click(object sender, EventArgs e)
         {
-            if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("("))
+            if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
+            {
                 textDisplay.Text = textDisplay.Text + eButton.Text;
+                if (operatorForDecimalCount < decimalCount)
+                    operatorForDecimalCount++;
+            }
         }
 
         private void oneButton_Click(object sender, EventArgs e)
@@ -119,7 +136,7 @@ namespace CalculatorApp
 
         private void openPButton_Click(object sender, EventArgs e)
         {
-            if (!isLastToken(")") && !isLastTokenNumber())
+            if (!isLastToken(")") && !isLastTokenNumber() && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + openPButton.Text;
                 openP++;
@@ -128,7 +145,7 @@ namespace CalculatorApp
 
         private void closePButton_Click(object sender, EventArgs e)
         {
-            if (!isTextboxEmpty() && !isLastTokenOperator() && closeP < openP && !isLastToken("("))
+            if (!isTextboxEmpty() && !isLastTokenOperator() && closeP < openP && !isLastToken("(") && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + closePButton.Text;
                 closeP++;
@@ -137,26 +154,46 @@ namespace CalculatorApp
 
         private void divideButton_Click(object sender, EventArgs e)
         {
-            if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("("))
+            if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
+            {
                 textDisplay.Text = textDisplay.Text + divideButton.Text;
+                if (operatorForDecimalCount < decimalCount)
+                    operatorForDecimalCount++;
+            }
+                
         }
 
         private void multiplyButton_Click(object sender, EventArgs e)
         {
-            if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("("))
+            if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
+            {
                 textDisplay.Text = textDisplay.Text + multiplyButton.Text;
+                if (operatorForDecimalCount < decimalCount)
+                    operatorForDecimalCount++;
+            }
+                
         }
 
         private void subtractButton_Click(object sender, EventArgs e)
         {
-            if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("("))
+            if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
+            {
                 textDisplay.Text = textDisplay.Text + subtractButton.Text;
+                if (operatorForDecimalCount < decimalCount)
+                    operatorForDecimalCount++;
+            }
+                
         }
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("("))
+            if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
+            {
                 textDisplay.Text = textDisplay.Text + addButton.Text;
+                if (operatorForDecimalCount < decimalCount)
+                    operatorForDecimalCount++;
+            }
+                
         }
 
         private void equalsButton_Click(object sender, EventArgs e)
@@ -183,7 +220,7 @@ namespace CalculatorApp
 
         private bool isLastTokenOperator()
         {
-            List<string> operatorTokens = new List<string> {"+", "-", "x", "/", ".", "%"};
+            List<string> operatorTokens = new List<string> {"+", "-", "x", "/", "%"};
             if (!isTextboxEmpty())
             {
                 if (operatorTokens.Contains(textDisplay.Text[^1].ToString()))
