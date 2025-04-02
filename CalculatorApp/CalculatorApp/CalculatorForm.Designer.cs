@@ -427,6 +427,7 @@
             // 
             // calculatorForm
             // 
+            KeyPreview = true;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
@@ -455,6 +456,7 @@
             Name = "calculatorForm";
             Text = "CalculatorApp";
             Load += calculatorForm_Load;
+            KeyDown += calculatorForm_KeyDown;
             ResumeLayout(false);
         }
 

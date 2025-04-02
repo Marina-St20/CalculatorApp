@@ -24,6 +24,90 @@ namespace CalculatorApp
 
         }
 
+        private void calculatorForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Back)
+            {
+                backspaceButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D9 && e.Shift)
+            {
+                openPButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D0 && e.Shift)
+            {
+                closePButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D5 && e.Shift)
+            {
+                percentButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Divide)
+            {
+                divideButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Multiply)
+            {
+                multiplyButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Subtract)
+            {
+                subtractButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Add)
+            {
+                addButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Decimal || e.KeyCode == Keys.OemPeriod)
+            {
+                decimalButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Enter)
+            {
+                equalsButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.NumPad0 || e.KeyCode == Keys.D0)
+            {
+                zeroButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.NumPad1 || e.KeyCode == Keys.D1)
+            {
+                oneButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.NumPad2 || e.KeyCode == Keys.D2)
+            {
+                twoButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.NumPad3 || e.KeyCode == Keys.D3)
+            {
+                threeButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.NumPad4 || e.KeyCode == Keys.D4)
+            {
+                fourButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.NumPad5 || e.KeyCode == Keys.D5)
+            {
+                fiveButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.NumPad6 || e.KeyCode == Keys.D6)
+            {
+                sixButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.NumPad7 || e.KeyCode == Keys.D7)
+            {
+                sevenButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.NumPad8 || e.KeyCode == Keys.D8)
+            {
+                eightButton_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.NumPad9 || e.KeyCode == Keys.D9)
+            {
+                nineButton_Click(sender, e);
+            }
+
+        }
 
         private void backspaceButton_Click(object sender, EventArgs e)
         {
@@ -52,7 +136,7 @@ namespace CalculatorApp
             {
                 textDisplay.Text = textDisplay.Text.Remove(textDisplay.Text.Length - 1);
             }
-            
+
         }
 
         private void zeroButton_Click(object sender, EventArgs e)
@@ -66,7 +150,7 @@ namespace CalculatorApp
             //0.0.0 <<decimals... how to ensure on app side they cant do this?
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken(")") && !isLastToken("."))
             {
-                if (decimalCount < operatorForDecimalCount +1 || (decimalCount == 0 && operatorForDecimalCount == 0))
+                if (decimalCount < operatorForDecimalCount + 1 || (decimalCount == 0 && operatorForDecimalCount == 0))
                 {
                     textDisplay.Text = textDisplay.Text + decimalButton.Text;
                     decimalCount++;
@@ -164,7 +248,7 @@ namespace CalculatorApp
                 if (operatorForDecimalCount <= decimalCount)
                     operatorForDecimalCount++;
             }
-                
+
         }
 
         private void multiplyButton_Click(object sender, EventArgs e)
@@ -175,7 +259,7 @@ namespace CalculatorApp
                 if (operatorForDecimalCount <= decimalCount)
                     operatorForDecimalCount++;
             }
-                
+
         }
 
         private void subtractButton_Click(object sender, EventArgs e)
@@ -186,7 +270,7 @@ namespace CalculatorApp
                 if (operatorForDecimalCount <= decimalCount)
                     operatorForDecimalCount++;
             }
-                
+
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -197,7 +281,7 @@ namespace CalculatorApp
                 if (operatorForDecimalCount <= decimalCount)
                     operatorForDecimalCount++;
             }
-                
+
         }
 
         private void equalsButton_Click(object sender, EventArgs e)
@@ -206,7 +290,7 @@ namespace CalculatorApp
             {
                 String text = textDisplay.Text;
                 MessageBox.Show("You entered: " + text);
-                
+
                 //create formula based on text
                 //evaluate it
                 //clear textdisplay and display evaluate
@@ -224,7 +308,7 @@ namespace CalculatorApp
 
         private bool isLastTokenOperator()
         {
-            List<string> operatorTokens = new List<string> {"+", "-", "x", "/", "%"};
+            List<string> operatorTokens = new List<string> { "+", "-", "x", "/", "%" };
             if (!isTextboxEmpty())
             {
                 if (operatorTokens.Contains(textDisplay.Text[^1].ToString()))
