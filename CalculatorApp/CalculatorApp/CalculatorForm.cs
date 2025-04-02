@@ -24,6 +24,7 @@ namespace CalculatorApp
 
         }
 
+
         private void backspaceButton_Click(object sender, EventArgs e)
         {
             if (isLastToken("("))
@@ -65,7 +66,7 @@ namespace CalculatorApp
             //0.0.0 <<decimals... how to ensure on app side they cant do this?
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken(")") && !isLastToken("."))
             {
-                if (decimalCount < operatorForDecimalCount + 1)
+                if (decimalCount < operatorForDecimalCount +1 || (decimalCount == 0 && operatorForDecimalCount == 0))
                 {
                     textDisplay.Text = textDisplay.Text + decimalButton.Text;
                     decimalCount++;

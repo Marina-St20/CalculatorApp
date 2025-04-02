@@ -56,6 +56,8 @@
             // 
             backspaceButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             backspaceButton.BackColor = SystemColors.Window;
+            backspaceButton.FlatAppearance.BorderColor = Color.Black;
+            backspaceButton.FlatAppearance.BorderSize = 0;
             backspaceButton.FlatStyle = FlatStyle.Flat;
             backspaceButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             backspaceButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -63,6 +65,7 @@
             backspaceButton.Name = "backspaceButton";
             backspaceButton.Size = new Size(94, 82);
             backspaceButton.TabIndex = 0;
+            backspaceButton.TabStop = false;
             backspaceButton.Text = "BKSP";
             backspaceButton.UseMnemonic = false;
             backspaceButton.UseVisualStyleBackColor = false;
@@ -72,6 +75,7 @@
             // 
             openPButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             openPButton.BackColor = SystemColors.Window;
+            openPButton.FlatAppearance.BorderSize = 0;
             openPButton.FlatStyle = FlatStyle.Flat;
             openPButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             openPButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -79,6 +83,7 @@
             openPButton.Name = "openPButton";
             openPButton.Size = new Size(94, 82);
             openPButton.TabIndex = 1;
+            openPButton.TabStop = false;
             openPButton.Text = "(";
             openPButton.UseMnemonic = false;
             openPButton.UseVisualStyleBackColor = false;
@@ -88,6 +93,7 @@
             // 
             closePButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             closePButton.BackColor = SystemColors.Window;
+            closePButton.FlatAppearance.BorderSize = 0;
             closePButton.FlatStyle = FlatStyle.Flat;
             closePButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             closePButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -95,6 +101,7 @@
             closePButton.Name = "closePButton";
             closePButton.Size = new Size(94, 82);
             closePButton.TabIndex = 2;
+            closePButton.TabStop = false;
             closePButton.Text = ")";
             closePButton.UseMnemonic = false;
             closePButton.UseVisualStyleBackColor = false;
@@ -104,6 +111,7 @@
             // 
             divideButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             divideButton.BackColor = SystemColors.Window;
+            divideButton.FlatAppearance.BorderSize = 0;
             divideButton.FlatStyle = FlatStyle.Flat;
             divideButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             divideButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -111,6 +119,7 @@
             divideButton.Name = "divideButton";
             divideButton.Size = new Size(94, 82);
             divideButton.TabIndex = 3;
+            divideButton.TabStop = false;
             divideButton.Text = "/";
             divideButton.UseMnemonic = false;
             divideButton.UseVisualStyleBackColor = false;
@@ -120,6 +129,7 @@
             // 
             sevenButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             sevenButton.BackColor = SystemColors.Window;
+            sevenButton.FlatAppearance.BorderSize = 0;
             sevenButton.FlatStyle = FlatStyle.Flat;
             sevenButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             sevenButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -127,6 +137,7 @@
             sevenButton.Name = "sevenButton";
             sevenButton.Size = new Size(94, 82);
             sevenButton.TabIndex = 4;
+            sevenButton.TabStop = false;
             sevenButton.Text = "7";
             sevenButton.UseMnemonic = false;
             sevenButton.UseVisualStyleBackColor = false;
@@ -136,6 +147,7 @@
             // 
             eightButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             eightButton.BackColor = SystemColors.Window;
+            eightButton.FlatAppearance.BorderSize = 0;
             eightButton.FlatStyle = FlatStyle.Flat;
             eightButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             eightButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -143,6 +155,7 @@
             eightButton.Name = "eightButton";
             eightButton.Size = new Size(94, 82);
             eightButton.TabIndex = 5;
+            eightButton.TabStop = false;
             eightButton.Text = "8";
             eightButton.UseMnemonic = false;
             eightButton.UseVisualStyleBackColor = false;
@@ -152,6 +165,7 @@
             // 
             nineButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             nineButton.BackColor = SystemColors.Window;
+            nineButton.FlatAppearance.BorderSize = 0;
             nineButton.FlatStyle = FlatStyle.Flat;
             nineButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             nineButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -159,6 +173,7 @@
             nineButton.Name = "nineButton";
             nineButton.Size = new Size(94, 82);
             nineButton.TabIndex = 6;
+            nineButton.TabStop = false;
             nineButton.Text = "9";
             nineButton.UseMnemonic = false;
             nineButton.UseVisualStyleBackColor = false;
@@ -168,6 +183,7 @@
             // 
             multiplyButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             multiplyButton.BackColor = SystemColors.Window;
+            multiplyButton.FlatAppearance.BorderSize = 0;
             multiplyButton.FlatStyle = FlatStyle.Flat;
             multiplyButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             multiplyButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -175,6 +191,7 @@
             multiplyButton.Name = "multiplyButton";
             multiplyButton.Size = new Size(94, 82);
             multiplyButton.TabIndex = 7;
+            multiplyButton.TabStop = false;
             multiplyButton.Text = "x";
             multiplyButton.UseMnemonic = false;
             multiplyButton.UseVisualStyleBackColor = false;
@@ -184,6 +201,7 @@
             // 
             fourButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             fourButton.BackColor = SystemColors.Window;
+            fourButton.FlatAppearance.BorderSize = 0;
             fourButton.FlatStyle = FlatStyle.Flat;
             fourButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             fourButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -191,6 +209,7 @@
             fourButton.Name = "fourButton";
             fourButton.Size = new Size(94, 82);
             fourButton.TabIndex = 8;
+            fourButton.TabStop = false;
             fourButton.Text = "4";
             fourButton.UseMnemonic = false;
             fourButton.UseVisualStyleBackColor = false;
@@ -200,6 +219,7 @@
             // 
             fiveButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             fiveButton.BackColor = SystemColors.Window;
+            fiveButton.FlatAppearance.BorderSize = 0;
             fiveButton.FlatStyle = FlatStyle.Flat;
             fiveButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             fiveButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -207,6 +227,7 @@
             fiveButton.Name = "fiveButton";
             fiveButton.Size = new Size(94, 82);
             fiveButton.TabIndex = 9;
+            fiveButton.TabStop = false;
             fiveButton.Text = "5";
             fiveButton.UseMnemonic = false;
             fiveButton.UseVisualStyleBackColor = false;
@@ -216,6 +237,7 @@
             // 
             sixButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             sixButton.BackColor = SystemColors.Window;
+            sixButton.FlatAppearance.BorderSize = 0;
             sixButton.FlatStyle = FlatStyle.Flat;
             sixButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             sixButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -223,6 +245,7 @@
             sixButton.Name = "sixButton";
             sixButton.Size = new Size(94, 82);
             sixButton.TabIndex = 10;
+            sixButton.TabStop = false;
             sixButton.Text = "6";
             sixButton.UseMnemonic = false;
             sixButton.UseVisualStyleBackColor = false;
@@ -232,6 +255,7 @@
             // 
             subtractButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             subtractButton.BackColor = SystemColors.Window;
+            subtractButton.FlatAppearance.BorderSize = 0;
             subtractButton.FlatStyle = FlatStyle.Flat;
             subtractButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             subtractButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -239,6 +263,7 @@
             subtractButton.Name = "subtractButton";
             subtractButton.Size = new Size(94, 82);
             subtractButton.TabIndex = 11;
+            subtractButton.TabStop = false;
             subtractButton.Text = "-";
             subtractButton.UseMnemonic = false;
             subtractButton.UseVisualStyleBackColor = false;
@@ -248,6 +273,7 @@
             // 
             oneButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             oneButton.BackColor = SystemColors.Window;
+            oneButton.FlatAppearance.BorderSize = 0;
             oneButton.FlatStyle = FlatStyle.Flat;
             oneButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             oneButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -255,6 +281,7 @@
             oneButton.Name = "oneButton";
             oneButton.Size = new Size(94, 82);
             oneButton.TabIndex = 12;
+            oneButton.TabStop = false;
             oneButton.Text = "1";
             oneButton.UseMnemonic = false;
             oneButton.UseVisualStyleBackColor = false;
@@ -264,6 +291,7 @@
             // 
             twoButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             twoButton.BackColor = SystemColors.Window;
+            twoButton.FlatAppearance.BorderSize = 0;
             twoButton.FlatStyle = FlatStyle.Flat;
             twoButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             twoButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -271,6 +299,7 @@
             twoButton.Name = "twoButton";
             twoButton.Size = new Size(94, 82);
             twoButton.TabIndex = 13;
+            twoButton.TabStop = false;
             twoButton.Text = "2";
             twoButton.UseMnemonic = false;
             twoButton.UseVisualStyleBackColor = false;
@@ -280,6 +309,7 @@
             // 
             threeButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             threeButton.BackColor = SystemColors.Window;
+            threeButton.FlatAppearance.BorderSize = 0;
             threeButton.FlatStyle = FlatStyle.Flat;
             threeButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             threeButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -287,6 +317,7 @@
             threeButton.Name = "threeButton";
             threeButton.Size = new Size(94, 82);
             threeButton.TabIndex = 14;
+            threeButton.TabStop = false;
             threeButton.Text = "3";
             threeButton.UseMnemonic = false;
             threeButton.UseVisualStyleBackColor = false;
@@ -296,6 +327,7 @@
             // 
             addButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             addButton.BackColor = SystemColors.Window;
+            addButton.FlatAppearance.BorderSize = 0;
             addButton.FlatStyle = FlatStyle.Flat;
             addButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             addButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -303,6 +335,7 @@
             addButton.Name = "addButton";
             addButton.Size = new Size(94, 82);
             addButton.TabIndex = 15;
+            addButton.TabStop = false;
             addButton.Text = "+";
             addButton.UseMnemonic = false;
             addButton.UseVisualStyleBackColor = false;
@@ -312,6 +345,7 @@
             // 
             zeroButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             zeroButton.BackColor = SystemColors.Window;
+            zeroButton.FlatAppearance.BorderSize = 0;
             zeroButton.FlatStyle = FlatStyle.Flat;
             zeroButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             zeroButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -319,6 +353,7 @@
             zeroButton.Name = "zeroButton";
             zeroButton.Size = new Size(94, 82);
             zeroButton.TabIndex = 16;
+            zeroButton.TabStop = false;
             zeroButton.Text = "0";
             zeroButton.UseMnemonic = false;
             zeroButton.UseVisualStyleBackColor = false;
@@ -328,6 +363,7 @@
             // 
             decimalButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             decimalButton.BackColor = SystemColors.Window;
+            decimalButton.FlatAppearance.BorderSize = 0;
             decimalButton.FlatStyle = FlatStyle.Flat;
             decimalButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             decimalButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -335,6 +371,7 @@
             decimalButton.Name = "decimalButton";
             decimalButton.Size = new Size(94, 82);
             decimalButton.TabIndex = 17;
+            decimalButton.TabStop = false;
             decimalButton.Text = ".";
             decimalButton.UseMnemonic = false;
             decimalButton.UseVisualStyleBackColor = false;
@@ -344,6 +381,7 @@
             // 
             eButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             eButton.BackColor = SystemColors.Window;
+            eButton.FlatAppearance.BorderSize = 0;
             eButton.FlatStyle = FlatStyle.Flat;
             eButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             eButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -351,6 +389,7 @@
             eButton.Name = "eButton";
             eButton.Size = new Size(94, 82);
             eButton.TabIndex = 18;
+            eButton.TabStop = false;
             eButton.Text = "%";
             eButton.UseMnemonic = false;
             eButton.UseVisualStyleBackColor = false;
@@ -360,6 +399,7 @@
             // 
             equalsButton.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             equalsButton.BackColor = SystemColors.Window;
+            equalsButton.FlatAppearance.BorderSize = 0;
             equalsButton.FlatStyle = FlatStyle.Flat;
             equalsButton.Font = new Font("Arial", 12F, FontStyle.Bold);
             equalsButton.ForeColor = Color.FromArgb(64, 64, 64);
@@ -367,6 +407,7 @@
             equalsButton.Name = "equalsButton";
             equalsButton.Size = new Size(94, 82);
             equalsButton.TabIndex = 19;
+            equalsButton.TabStop = false;
             equalsButton.Text = "=";
             equalsButton.UseMnemonic = false;
             equalsButton.UseVisualStyleBackColor = false;
