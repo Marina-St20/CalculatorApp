@@ -6,8 +6,6 @@ namespace CalculatorApp
     {
         private int openP;
         private int closeP;
-        private int operatorForDecimalCount;
-        private int decimalCount;
 
         public calculatorForm()
         {
@@ -119,14 +117,6 @@ namespace CalculatorApp
             {
                 closeP--;
             }
-            if (isLastToken("."))
-            {
-                decimalCount--;
-            }
-            if (isLastTokenOperator()) //another check? 
-            {
-                operatorForDecimalCount--;
-            }
             if (textDisplay.Text.Length == 1)
             {
                 openP = 0;
@@ -150,10 +140,12 @@ namespace CalculatorApp
             //0.0.0 <<decimals... how to ensure on app side they cant do this?
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken(")") && !isLastToken("."))
             {
-                if (decimalCount < operatorForDecimalCount + 1 || (decimalCount == 0 && operatorForDecimalCount == 0))
+                string[] tokenList = textDisplay.Text.Split(new char[] { '+', '-', '/', 'x', '%' });
+                string currentNum = tokenList[tokenList.Length - 1];
+
+                if (!currentNum.Contains("."))
                 {
                     textDisplay.Text = textDisplay.Text + decimalButton.Text;
-                    decimalCount++;
                 }
             }
         }
@@ -163,8 +155,6 @@ namespace CalculatorApp
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + eButton.Text;
-                if (operatorForDecimalCount <= decimalCount)
-                    operatorForDecimalCount++;
             }
         }
 
@@ -245,8 +235,6 @@ namespace CalculatorApp
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + divideButton.Text;
-                if (operatorForDecimalCount <= decimalCount)
-                    operatorForDecimalCount++;
             }
 
         }
@@ -256,8 +244,6 @@ namespace CalculatorApp
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + multiplyButton.Text;
-                if (operatorForDecimalCount <= decimalCount)
-                    operatorForDecimalCount++;
             }
 
         }
@@ -267,8 +253,6 @@ namespace CalculatorApp
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + subtractButton.Text;
-                if (operatorForDecimalCount <= decimalCount)
-                    operatorForDecimalCount++;
             }
 
         }
@@ -278,8 +262,6 @@ namespace CalculatorApp
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + addButton.Text;
-                if (operatorForDecimalCount <= decimalCount)
-                    operatorForDecimalCount++;
             }
 
         }
