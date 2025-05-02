@@ -455,6 +455,9 @@
             Controls.Add(backspaceButton);
             Name = "calculatorForm";
             Text = "CalculatorApp";
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            StartPosition = FormStartPosition.CenterScreen;
             Load += calculatorForm_Load;
             KeyDown += calculatorForm_KeyDown;
             ResumeLayout(false);
