@@ -85,6 +85,7 @@ namespace Formula
                         {
                             resultVal = numStack.Pop() / Convert.ToDouble(token);
                         }
+                        numStack.Push(resultVal); ///////////
                     }
                     else
                     {
@@ -158,27 +159,29 @@ namespace Formula
                         numStack.Push(resultVal);
                     }
                 }
-                //if operator stack empty
-                if (opStack.Count == 0)
+                
+            }
+
+            //if operator stack empty
+            if (opStack.Count == 0)
+            {
+                return numStack.Pop().ToString();
+            }
+            //if operator stack not empty
+            else
+            {
+                leftVal = numStack.Pop();
+                rightVal = numStack.Pop();
+
+                if (opStack.Pop().Equals("+"))
                 {
-                    return numStack.Pop().ToString();
+                    resultVal = leftVal + rightVal;
                 }
-                //if operator stack not empty
                 else
                 {
-                    leftVal = numStack.Pop();
-                    rightVal = numStack.Pop();
-
-                    if (opStack.Pop().Equals("+"))
-                    {
-                        resultVal = leftVal + rightVal;
-                    } 
-                    else
-                    {
-                        resultVal = leftVal - rightVal;
-                    }
-                    return resultVal.ToString();
+                    resultVal = leftVal - rightVal;
                 }
+                return resultVal.ToString();
             }
 
             return resultVal.ToString();

@@ -6,6 +6,7 @@ namespace CalculatorApp
     {
         private int openP;
         private int closeP;
+        private bool justEvaluated = false;
 
         public calculatorForm()
         {
@@ -126,13 +127,7 @@ namespace CalculatorApp
             {
                 textDisplay.Text = textDisplay.Text.Remove(textDisplay.Text.Length - 1);
             }
-
-        }
-
-        private void zeroButton_Click(object sender, EventArgs e)
-        {
-            if (!isLastToken(")"))
-                textDisplay.Text = textDisplay.Text + zeroButton.Text;
+            justEvaluated = false;
         }
 
         private void decimalButton_Click(object sender, EventArgs e)
@@ -147,6 +142,7 @@ namespace CalculatorApp
                 {
                     textDisplay.Text = textDisplay.Text + decimalButton.Text;
                 }
+                justEvaluated = false;
             }
         }
 
@@ -155,6 +151,18 @@ namespace CalculatorApp
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + eButton.Text;
+                justEvaluated = false;
+            }
+        }
+        private void zeroButton_Click(object sender, EventArgs e)
+        {
+            if (!isLastToken(")"))
+                textDisplay.Text = textDisplay.Text + zeroButton.Text;
+            
+            if (justEvaluated)
+            {
+                textDisplay.Text = zeroButton.Text;
+                justEvaluated = false;
             }
         }
 
@@ -162,54 +170,108 @@ namespace CalculatorApp
         {
             if (!isLastToken(")"))
                 textDisplay.Text = textDisplay.Text + oneButton.Text;
+            
+            if (justEvaluated)
+            {
+                textDisplay.Text = oneButton.Text;
+                justEvaluated = false;
+            }
         }
 
         private void twoButton_Click(object sender, EventArgs e)
         {
             if (!isLastToken(")"))
                 textDisplay.Text = textDisplay.Text + twoButton.Text;
+
+            if (justEvaluated)
+            {
+                textDisplay.Text = twoButton.Text;
+                justEvaluated = false;
+            }
         }
 
         private void threeButton_Click(object sender, EventArgs e)
         {
             if (!isLastToken(")"))
                 textDisplay.Text = textDisplay.Text + threeButton.Text;
+
+            if (justEvaluated)
+            {
+                textDisplay.Text = threeButton.Text;
+                justEvaluated = false;
+            }
         }
 
         private void fourButton_Click(object sender, EventArgs e)
         {
             if (!isLastToken(")"))
                 textDisplay.Text = textDisplay.Text + fourButton.Text;
+
+            if (justEvaluated)
+            {
+                textDisplay.Text = fourButton.Text;
+                justEvaluated = false;
+            }
         }
 
         private void fiveButton_Click(object sender, EventArgs e)
         {
             if (!isLastToken(")"))
                 textDisplay.Text = textDisplay.Text + fiveButton.Text;
+
+            if (justEvaluated)
+            {
+                textDisplay.Text = fiveButton.Text;
+                justEvaluated = false;
+            }
         }
 
         private void sixButton_Click(object sender, EventArgs e)
         {
             if (!isLastToken(")"))
                 textDisplay.Text = textDisplay.Text + sixButton.Text;
+            
+            if (justEvaluated)
+            {
+                textDisplay.Text = sixButton.Text;
+                justEvaluated = false;
+            }
         }
 
         private void sevenButton_Click(object sender, EventArgs e)
         {
             if (!isLastToken(")"))
                 textDisplay.Text = textDisplay.Text + sevenButton.Text;
+
+            if (justEvaluated)
+            {
+                textDisplay.Text = sevenButton.Text;
+                justEvaluated = false;
+            }
         }
 
         private void eightButton_Click(object sender, EventArgs e)
         {
             if (!isLastToken(")"))
                 textDisplay.Text = textDisplay.Text + eightButton.Text;
+
+            if (justEvaluated)
+            {
+                textDisplay.Text = eightButton.Text;
+                justEvaluated = false;
+            }
         }
 
         private void nineButton_Click(object sender, EventArgs e)
         {
             if (!isLastToken(")"))
                 textDisplay.Text = textDisplay.Text + nineButton.Text;
+
+            if (justEvaluated)
+            {
+                textDisplay.Text = nineButton.Text;
+                justEvaluated = false;
+            }
         }
 
         private void openPButton_Click(object sender, EventArgs e)
@@ -218,6 +280,7 @@ namespace CalculatorApp
             {
                 textDisplay.Text = textDisplay.Text + openPButton.Text;
                 openP++;
+                justEvaluated = false;
             }
         }
 
@@ -227,6 +290,7 @@ namespace CalculatorApp
             {
                 textDisplay.Text = textDisplay.Text + closePButton.Text;
                 closeP++;
+                justEvaluated = false;
             }
         }
 
@@ -235,6 +299,7 @@ namespace CalculatorApp
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + divideButton.Text;
+                justEvaluated = false;
             }
 
         }
@@ -244,6 +309,7 @@ namespace CalculatorApp
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + multiplyButton.Text;
+                justEvaluated = false;
             }
 
         }
@@ -253,6 +319,7 @@ namespace CalculatorApp
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + subtractButton.Text;
+                justEvaluated = false;
             }
 
         }
@@ -262,6 +329,7 @@ namespace CalculatorApp
             if (!isTextboxEmpty() && !isLastTokenOperator() && !isLastToken("(") && !isLastToken("."))
             {
                 textDisplay.Text = textDisplay.Text + addButton.Text;
+                justEvaluated = false;
             }
 
         }
@@ -278,11 +346,13 @@ namespace CalculatorApp
                 try
                 {
                     textDisplay.Text = formula.Evaluate();
+                    justEvaluated = true;
                 } catch (Exception ex)
                 {
                     textDisplay.Text = ex.Message;
                 }
 
+                
 
                 //create formula based on text
                 //evaluate it
