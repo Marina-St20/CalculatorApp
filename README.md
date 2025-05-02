@@ -13,7 +13,7 @@ This application provides a user interface for performing simple calculations, i
 - Exception handling
 
 ## Getting Started
-1. Clone this repository: git clone https://github.com/yourusername/windows-forms-calculator.git
+1. Clone this repository: git clone https://github.com/Marina-St20/CalculatorApp
 2. Open the project in Visual Studio Code
 3. Build and run the application
 
