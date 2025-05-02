@@ -282,7 +282,7 @@ namespace CalculatorApp
                 {
                     textDisplay.Text = ex.Message;
                 }
-                
+
 
                 //create formula based on text
                 //evaluate it

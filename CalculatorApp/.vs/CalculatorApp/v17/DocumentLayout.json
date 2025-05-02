@@ -11,9 +11,6 @@
       "RelativeMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|solutionrelative:calculatorapp\\calculatorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\canca\\source\\repos\\ps7-dinonuggies_tvt\\Spreadsheet\\Formula\\Formula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|c:\\users\\canca\\source\\repos\\calculatorapp\\calculatorapp\\calculatorapp\\calculatorform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F087409-F70C-4592-AAE3-7F40E55DDF5A}|CalculatorApp\\CalculatorApp.csproj|solutionrelative:calculatorapp\\calculatorform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 267,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "CalculatorForm.cs",
+              "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.cs",
+              "RelativeDocumentMoniker": "CalculatorApp\\CalculatorForm.cs",
+              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.cs*",
+              "RelativeToolTip": "CalculatorApp\\CalculatorForm.cs*",
+              "ViewState": "AgIAAAMBAAAAAAAAAAA4wBcBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T00:01:02.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CalculatorForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.Designer.cs",
               "RelativeDocumentMoniker": "CalculatorApp\\CalculatorForm.Designer.cs",
@@ -58,41 +68,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "CalculatorForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.cs",
               "RelativeDocumentMoniker": "CalculatorApp\\CalculatorForm.cs",
-              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.cs [Design]",
-              "RelativeToolTip": "CalculatorApp\\CalculatorForm.cs [Design]",
+              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.cs [Design]*",
+              "RelativeToolTip": "CalculatorApp\\CalculatorForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T19:33:32.871Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CalculatorForm.cs",
-              "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.cs",
-              "RelativeDocumentMoniker": "CalculatorApp\\CalculatorForm.cs",
-              "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\CalculatorApp\\CalculatorForm.cs",
-              "RelativeToolTip": "CalculatorApp\\CalculatorForm.cs",
-              "ViewState": "AgIAAPwAAAAAAAAAAAAowBMBAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T00:01:02.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Formula.cs",
-              "DocumentMoniker": "C:\\Users\\canca\\source\\repos\\ps7-dinonuggies_tvt\\Spreadsheet\\Formula\\Formula.cs",
-              "RelativeDocumentMoniker": "..\\..\\ps7-dinonuggies_tvt\\Spreadsheet\\Formula\\Formula.cs",
-              "ToolTip": "C:\\Users\\canca\\source\\repos\\ps7-dinonuggies_tvt\\Spreadsheet\\Formula\\Formula.cs",
-              "RelativeToolTip": "..\\..\\ps7-dinonuggies_tvt\\Spreadsheet\\Formula\\Formula.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T19:08:01.486Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -102,7 +86,7 @@
               "RelativeDocumentMoniker": "Formula\\Formula.cs",
               "ToolTip": "C:\\Users\\canca\\source\\repos\\CalculatorApp\\CalculatorApp\\Formula\\Formula.cs",
               "RelativeToolTip": "Formula\\Formula.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAiwFoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T18:15:19.655Z",
               "EditorCaption": ""

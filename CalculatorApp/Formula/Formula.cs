@@ -16,7 +16,9 @@ namespace Formula
             formulaString = formula;
 
             //createTokenList();
-            tokenList = formulaString.Split(new char[] { '+', '-', '/', 'x', '%' });
+            //tokenList = formulaString.Split(new char[] { '+', '-', '/', 'x', '%' });
+
+            tokenList = Regex.Matches(formulaString, @"\d+(\.\d+)?|[+\-x/%]").Select(m => m.Value).ToArray();
 
             if (!isValidFormula(out string errorMessage))
             {
@@ -43,7 +45,7 @@ namespace Formula
         }
 
         //Check if valid Formula Method
-
+        //delete later????
         private bool isValidFormula(out string errorMessage)
         {
             errorMessage = string.Empty;
@@ -86,7 +88,7 @@ namespace Formula
                     }
                     else
                     {
-                        numStack.Push(resultVal);
+                        numStack.Push(Convert.ToDouble(token));
                     }
                 }
                 //if token is + or -
