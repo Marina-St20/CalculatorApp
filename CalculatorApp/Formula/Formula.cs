@@ -71,21 +71,31 @@ namespace Formula
                 //if token is a number
                 if (IsNum(token))
                 {
-                    if (IsOnTop(opStack, "x") || IsOnTop(opStack, "/"))
+                    if (IsOnTop(opStack, "x") || IsOnTop(opStack, "/") || IsOnTop(opStack, "%"))
                     {
-                        if (Convert.ToDouble(token) == 0.0)
-                        {
-                            throw new InvalidFormulaException("Cannot divide by zero.");
-                        }
-                        if (opStack.Pop() == "x")
+                        string operatorToken = opStack.Pop();
+
+                        if (operatorToken == "x")
                         {
                             resultVal = numStack.Pop() * Convert.ToDouble(token);
                         }
-                        else
+                        else if (operatorToken == "/")
                         {
+                            if (Convert.ToDouble(token) == 0.0)
+                            {
+                                throw new InvalidFormulaException("Error: div by 0");
+                            }
                             resultVal = numStack.Pop() / Convert.ToDouble(token);
                         }
-                        numStack.Push(resultVal); ///////////
+                        else if (operatorToken == "%")
+                        {
+                            if (Convert.ToDouble(token) == 0.0)
+                            {
+                                throw new InvalidFormulaException("Error: div by 0");
+                            }
+                            resultVal = numStack.Pop() % Convert.ToDouble(token);
+                        }
+                        numStack.Push(resultVal);
                     }
                     else
                     {
@@ -113,8 +123,8 @@ namespace Formula
                     }
                     opStack.Push(token);
                 }
-                //if token is *, /, or (
-                if (token.Equals("x")  || token.Equals("/") || token.Equals("("))
+                //if token is *, /, %, or (
+                if (token.Equals("x")  || token.Equals("/") || token.Equals("%") || token.Equals("("))
                 {
                     opStack.Push(token);
                 }
@@ -139,22 +149,32 @@ namespace Formula
                     }
                     opStack.Pop();
 
-                    if (IsOnTop(opStack, "x") || IsOnTop(opStack, "/"))
+                    if (IsOnTop(opStack, "x") || IsOnTop(opStack, "/") || token.Equals("%"))
                     {
                         leftVal = numStack.Pop();
                         rightVal = numStack.Pop();
 
-                        if (leftVal == 0.0)
-                        {
-                            throw new InvalidFormulaException("Cannot divide by zero.");
-                        }
-                        if (opStack.Pop() == "x")
+                        string operatorToken = opStack.Pop();
+
+                        if (operatorToken == "x")
                         {
                             resultVal = leftVal * rightVal;
                         }
-                        else
+                        else if (operatorToken == "/")
                         {
+                            if (leftVal == 0.0)
+                            {
+                                throw new InvalidFormulaException("Error: div by 0");
+                            }
                             resultVal = leftVal / rightVal;
+                        }
+                        else if ((operatorToken == "%")) 
+                        {
+                            if (leftVal == 0.0)
+                            {
+                                throw new InvalidFormulaException("Error: div by 0");
+                            }
+                            resultVal = leftVal % rightVal;
                         }
                         numStack.Push(resultVal);
                     }
