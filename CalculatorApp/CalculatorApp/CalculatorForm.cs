@@ -271,7 +271,18 @@ namespace CalculatorApp
             if (!isTextboxEmpty() && hasValidSyntax())
             {
                 String text = textDisplay.Text;
-                MessageBox.Show("You entered: " + text);
+                //MessageBox.Show("You entered: " + text);
+
+                Formula.Formula formula = new Formula.Formula(text);
+
+                try
+                {
+                    textDisplay.Text = formula.Evaluate();
+                } catch (Exception ex)
+                {
+                    textDisplay.Text = ex.Message;
+                }
+                
 
                 //create formula based on text
                 //evaluate it
