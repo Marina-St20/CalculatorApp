@@ -423,11 +423,9 @@
             textDisplay.Size = new Size(459, 133);
             textDisplay.TabIndex = 20;
             textDisplay.TextAlign = ContentAlignment.BottomRight;
-            textDisplay.Click += textDisplay_Click;
             // 
             // calculatorForm
             // 
-            KeyPreview = true;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
@@ -453,12 +451,12 @@
             Controls.Add(closePButton);
             Controls.Add(openPButton);
             Controls.Add(backspaceButton);
-            Name = "calculatorForm";
-            Text = "CalculatorApp";
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
             MaximizeBox = false;
+            Name = "calculatorForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Load += calculatorForm_Load;
+            Text = "CalculatorApp";
             KeyDown += calculatorForm_KeyDown;
             ResumeLayout(false);
         }

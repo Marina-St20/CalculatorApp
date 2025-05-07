@@ -1,62 +1,40 @@
-﻿using System.Collections;
+﻿// Formula - Expression evaluation logic for CalculatorApp
+// Created by Marina S
+// GitHub: github.com/Marina-St20
+// License: MIT
+
+using System.Collections;
 using System.Runtime.Intrinsics;
 using System.Text.RegularExpressions;
 using System.Windows.Markup;
 
 namespace Formula
 {
+    /// <summary>
+    /// Represents a mathematical formula for evaluation
+    /// </summary>
     public class Formula
     {
         private string formulaString = "";
-
         private string[] tokenList;
 
+        /// <summary>
+        /// Initializes a new Formula with the given expression string
+        /// </summary>
+        /// <param name="formula">The mathematical expression to evaluate</param>
         public Formula(string formula)
         {
             formulaString = formula;
-
-            //createTokenList();
-            //tokenList = formulaString.Split(new char[] { '+', '-', '/', 'x', '%' });
-
+            
+            // Tokenize the input string using regex
             tokenList = Regex.Matches(formulaString, @"\d+(\.\d+)?|[+\-x/%]").Select(m => m.Value).ToArray();
-
-            if (!isValidFormula(out string errorMessage))
-            {
-                throw new InvalidFormulaException(errorMessage);
-            }
-
-
         }
 
-        //string to token list (dont care about spaces)
-
-        private void createTokenList()
-        {
-            //string pattern = @"\d+(\.\d+)?|[%+\-*/()]";
-            //MatchCollection matches = Regex.Matches(formulaString, pattern);
-
-            //foreach (Match match in matches)
-            //{
-            //    tokenList.Add(match.Value);
-            //}
-
-            string[] tokenList = formulaString.Split(new char[] { '+', '-', '/', 'x', '%' });
-            //string currentNum = tokenList[tokenList.Length - 1];
-        }
-
-        //Check if valid Formula Method
-        //delete later????
-        private bool isValidFormula(out string errorMessage)
-        {
-            errorMessage = string.Empty;
-
-            return true;
-        }
-
-        //token checks
-
-        //evalute method
-
+        /// <summary>
+        /// Evaluates the mathematical expression
+        /// </summary>
+        /// <returns>The result as a string</returns>
+        /// <exception cref="InvalidFormulaException">Thrown for division by zero or other errors</exception>
         public string Evaluate() 
         {
             Stack<double> numStack = new();
@@ -68,9 +46,10 @@ namespace Formula
 
             foreach (string token in tokenList)
             {
-                //if token is a number
+                // Process number
                 if (IsNum(token))
                 {
+                    //Handle multiplication/division/modulus
                     if (IsOnTop(opStack, "x") || IsOnTop(opStack, "/") || IsOnTop(opStack, "%"))
                     {
                         string operatorToken = opStack.Pop();
@@ -102,9 +81,10 @@ namespace Formula
                         numStack.Push(Convert.ToDouble(token));
                     }
                 }
-                //if token is + or -
+                // Process addition/subtraction
                 if (token.Equals("+") || token.Equals("-"))
                 {
+                    // Evaluate previous addition/subtraction if exists
                     if (IsOnTop(opStack, "+") || IsOnTop(opStack, "-"))
                     {
                         rightVal = numStack.Pop();
@@ -123,14 +103,15 @@ namespace Formula
                     }
                     opStack.Push(token);
                 }
-                //if token is *, /, %, or (
+                // Process multiplication/division/modulus/open paranthesis
                 if (token.Equals("x")  || token.Equals("/") || token.Equals("%") || token.Equals("("))
                 {
                     opStack.Push(token);
                 }
-                //if token is )
+                // Process closing parenthesis
                 if (token.Equals(")"))
                 {
+                    // Evaluate inside parentheses
                     if (IsOnTop(opStack, "+") || IsOnTop(opStack, "-"))
                     {
                         leftVal = numStack.Pop();
@@ -147,8 +128,11 @@ namespace Formula
 
                         numStack.Push(resultVal);
                     }
+
+                    // Remove matching open parenthesis
                     opStack.Pop();
 
+                    // Handle multiplication/division/modulus after parentheses
                     if (IsOnTop(opStack, "x") || IsOnTop(opStack, "/") || token.Equals("%"))
                     {
                         leftVal = numStack.Pop();
@@ -182,12 +166,11 @@ namespace Formula
                 
             }
 
-            //if operator stack empty
+            // Final evaluation if operators remain
             if (opStack.Count == 0)
             {
                 return numStack.Pop().ToString();
             }
-            //if operator stack not empty
             else
             {
                 leftVal = numStack.Pop();
@@ -203,21 +186,33 @@ namespace Formula
                 }
                 return resultVal.ToString();
             }
-
-            return resultVal.ToString();
         }
 
+        /// <summary>
+        /// Checks if a token is a valid number
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
         private bool IsNum(string token)
         {
             return double.TryParse(token, out _);
         }
 
+        /// <summary>
+        /// Checks if a specific token is on top of the stack
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="stack">stack to check</param>
+        /// <param name="token">given token to check</param>
+        /// <returns></returns>
         private bool IsOnTop<T>(Stack<T> stack, string token)
         {
             return stack.Count > 0 && stack.Peek().Equals(token);
         }
 
-        //Errors/Exceptions: invalid Formulas, invalid methods
+        /// <summary>
+        /// Exception thrown for invalid formulas
+        /// </summary>
         public class InvalidFormulaException : Exception
         {
             public InvalidFormulaException(string message) : base(message) { }
