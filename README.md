@@ -4,11 +4,11 @@ This project implements keyboard input support and formula parsing and evaluatio
 
 ## About
 This application provides a user interface for performing simple calculations, including:
-- Addition, subtraction, multiplication, and division
-- Decimal and percentage operations
+- Addition, subtraction, multiplication, division, and modulo operations.
+- Supports Decimals
 - Parentheses for grouped expressions
 - Keyboard input
-- Formula validation
+- Ensures valid syntax before evaluating
 - Evaluation using a stack-based algorithm
 - Exception handling
 
